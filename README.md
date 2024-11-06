@@ -6,8 +6,5 @@ cd TaskManager
 Paso 2: Agregar plataformas y plugins
 
 cordova platform add android
-
-Luego, agrega los plugins necesarios para las notificaciones locales:
-
 cordova plugin add cordova-plugin-dialogs
 cordova plugin add cordova-plugin-local-notification
