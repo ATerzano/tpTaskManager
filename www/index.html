@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/index.css">
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>  
+</head>
+<body>
+    <h1>Gestión de Tareas</h1>
+    <form id="task-form">
+        <label for="task">Nombre de la tarea:</label>
+        <input type="text" id="task" required>
+
+        <label for="date">Fecha de vencimiento:</label>
+        <input type="datetime-local" id="date" required>
+
+        <button type="button" onclick="addTask()">Agregar tarea</button>
+    </form>
+
+    <ul id="task-list"></ul>
+
+    <script src="cordova.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+</html>
